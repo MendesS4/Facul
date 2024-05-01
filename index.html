@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estacionamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Cadastro de Reserva</h1>
+        <form id="reservationForm">
+            <label for="licensePlate">Placa do Veículo:</label>
+            <input type="text" id="licensePlate" required><br>
+            <label for="ownerName">Nome do Proprietário:</label>
+            <input type="text" id="ownerName" required><br>
+            <label for="apartmentNumber">Número do Apartamento:</label>
+            <input type="text" id="apartmentNumber" required><br>
+            <label for="apartmentBlock">Bloco do Apartamento:</label>
+            <input type="text" id="apartmentBlock" required><br>
+            <label for="vehicleModel">Modelo do Veículo:</label>
+            <input type="text" id="vehicleModel" required><br>
+            <label for="vehicleColor">Cor do Veículo:</label>
+            <input type="text" id="vehicleColor" required><br>
+            <label for="parkingSpot">Número da Vaga:</label>
+            <input type="text" id="parkingSpot" required><br>
+            <button type="button" onclick="saveReservation()">Salvar</button>
+        </form>
+
+        <h1>Listar Vagas</h1>
+        <ul id="parkingList">
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
